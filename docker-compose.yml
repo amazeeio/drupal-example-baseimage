@@ -59,7 +59,7 @@ services:
       - cli # basically just tells docker-compose to build the cli first
     environment:
       << : *default-environment # loads the defined environment variables from the top
-      LAGOON_LOCALDEV_URL: nginx-drupal-example.docker.amazee.io # generate another route for nginx, by default we go to varnish
+      LAGOON_LOCALDEV_URL: nginx-drupal-example-baseimage.docker.amazee.io # generate another route for nginx, by default we go to varnish
     networks:
       - amazeeio-network
       - default
